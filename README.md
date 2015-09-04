@@ -10,13 +10,13 @@ Il suffit d'ajoutez le fichier LocalStorage.swift à votre projet puis d'instanc
 # Usage
 
 #### getItem(item:AnyObject, forKey:String)
-Retourne les données si il y en a sinon, returne "localStorage Empty"
+Retourne les données si il y en a sinon, retourne "localStorage Empty"
 
 #### setItem(key:String) 
-Stocke les données coresspondant à la clé passé en parametre
+Stocke les données coresspondant à la clé passé en paramètre
 
 #### removeItem(key:String)
-Supprime les données coresspondant à la clé passé en parametre
+Supprime les données coresspondant à la clé passé en paramètre
 
 ## Récuperation des données stockées
   
@@ -25,13 +25,13 @@ Supprime les données coresspondant à la clé passé en parametre
 		localStorage.getItem("test")
 	}
 	
-## Ajout de donées
+## Ajout de données
 	
 	func foo () {
 	  localStorage.setItem("ITEM", forKey: "test")
 	}
 	
-## Ajout de donées
+## Suppression de données
 	
 	func bar () {
 	  localStorage.removeItem("test")
