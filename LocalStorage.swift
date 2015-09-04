@@ -26,6 +26,8 @@ class LocalStorage {
     Fonction permettant de recuperer des données dans localStorage comme en JavaScript
     
     :param: key Clé correspondant à l'item
+    
+    :returns: Retourne les données contenues dans le localStorage du type AnyObject
     */
     func getItem(key:String) -> AnyObject {
         var usersDefaults = NSUserDefaults.standardUserDefaults()
