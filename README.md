@@ -18,8 +18,8 @@ Supprime les données coresspondant à la clé passé en paramètre
 ## Récuperation des données stockées
   
 	override func viewDidLoad() {
-		super.viewDidLoad()
-		LocalStorage.getItem("test")
+	  super.viewDidLoad()
+	  LocalStorage.getItem("test")
 	}
 	
 ## Ajout de données
