@@ -2,10 +2,7 @@
 Classe permettant de gérer localStorage comme en JavaScript utilisant NSUserDefaults
 
 # Installation
-Il suffit d'ajoutez le fichier LocalStorage.swift à votre projet puis d'instancier la classe comme ceci:
-	
-	// class ViewController...
-	var localStorage = LocalStorage()
+Il suffit d'ajoutez le fichier LocalStorage.swift à votre projet. La classe etant `static` vous n'avez donc pas à l'instancier.
 
 # Usage
 
@@ -22,19 +19,19 @@ Supprime les données coresspondant à la clé passé en paramètre
   
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		localStorage.getItem("test")
+		LocalStorage.getItem("test")
 	}
 	
 ## Ajout de données
 	
 	func foo () {
-	  localStorage.setItem("ITEM", forKey: "test")
+	  LocalStorage.setItem("ITEM", forKey: "test")
 	}
 	
 ## Suppression de données
 	
 	func bar () {
-	  localStorage.removeItem("test")
+	  LocalStorage.removeItem("test")
 	}
 	
 
