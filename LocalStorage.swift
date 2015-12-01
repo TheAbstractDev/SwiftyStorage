@@ -16,7 +16,7 @@ class LocalStorage {
     :param: item   Item à sauvegarder
     :param: forKey Clé correspondant à l'item
     */
-    func setItem(item: AnyObject, forKey:String) {
+    static func setItem(item: AnyObject, forKey:String) {
         var usersDefaults = NSUserDefaults.standardUserDefaults()
         usersDefaults.setValue(item, forKey: forKey)
         usersDefaults.synchronize()
@@ -29,7 +29,7 @@ class LocalStorage {
     
     :returns: Retourne les données contenues dans le localStorage du type AnyObject
     */
-    func getItem(key:String) -> AnyObject {
+    static func getItem(key:String) -> AnyObject {
         var usersDefaults = NSUserDefaults.standardUserDefaults()
         var data: AnyObject?
         
@@ -37,7 +37,7 @@ class LocalStorage {
             data = usersDefaults.valueForKey(key)
             return data!
         } else {
-            data = "localStorage empty"
+            data = ""
             return data!
         }
         
@@ -48,7 +48,7 @@ class LocalStorage {
     
     :param: key Clé correspondant à l'item
     */
-    func removeItem(key:String) {
+    static func removeItem(key:String) {
         var usersDefaults = NSUserDefaults.standardUserDefaults()
         usersDefaults.removeObjectForKey(key)
     }
