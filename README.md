@@ -8,7 +8,7 @@ Add a `Podfile` that contains at least the following information to the root of 
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'SwiftyStorage', :git => 'https://github.com/TheAbstractDev/SwiftyStorage'
+pod 'SwiftyStorage', '~> 0.0.1'
 ```
 #### Manualy
 Simply open the .xcodeproj, build the project, reveal the framework: SwiftyStorage > SwiftyStorage > Products > SwiftyStorage.framework and drag it to your current xcode project. Make sure to check "Copy if needed".
