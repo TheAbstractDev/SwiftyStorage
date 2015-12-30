@@ -6,7 +6,7 @@ Swift NSUserDefaults class imitate JavaScript localStorage
 Add a `Podfile` that contains at least the following information to the root of your app project, then do `pod install`.
 ```ruby
 platform :ios, '8.0'
-pod 'SwiftyStorage'
+pod 'SwiftyStorage', '~> 0.0.1'
 use_frameworks!
 ```
 
