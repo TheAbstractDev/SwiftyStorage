@@ -1,5 +1,5 @@
 # SwiftyStorage
-Swift NSUserDefaults class imitate JavaScript localStorage
+Small Swift NSUserDefaults wrapper who looks like JavaScript localStorage
 
 # Installation
 #### CocoaPods
