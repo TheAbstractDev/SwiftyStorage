@@ -21,7 +21,7 @@ Store the data at the key passed as parameter
 Remove the data stored at the key passed as parameter
 
 # Usage
-Start with `import swiftStorage` in your source files.
+Start with `import SwiftyStorage` in your source files.
 
 ## Getting data
 ```swift
