@@ -1,4 +1,4 @@
-# swiftStorage
+# SwiftyStorage
 Swift NSUserDefaults class imitate JavaScript localStorage
 
 # Installation
