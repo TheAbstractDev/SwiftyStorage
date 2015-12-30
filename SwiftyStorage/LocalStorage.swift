@@ -8,7 +8,7 @@
 import UIKit
 
 /// Swift NSUserDefaults class imitate JavaScript localStorage
-class LocalStorage {
+public class LocalStorage {
     
     /**
      Store the data at the key passed as parameter
@@ -16,7 +16,7 @@ class LocalStorage {
      :param: item   Item to store
      :param: forKey Key of the item
      */
-    class func setItem(item: AnyObject, forKey:String) {
+    public class func setItem(item: AnyObject, forKey:String) {
         let usersDefaults = NSUserDefaults.standardUserDefaults()
         usersDefaults.setValue(item, forKey: forKey)
         usersDefaults.synchronize()
@@ -29,7 +29,7 @@ class LocalStorage {
      
      :returns: Return the data stored as AnyObject or an empty string
      */
-    class func getItem(key:String) -> AnyObject {
+    public class func getItem(key:String) -> AnyObject {
         let usersDefaults = NSUserDefaults.standardUserDefaults()
         var data: AnyObject?
         
@@ -48,7 +48,7 @@ class LocalStorage {
      
      :param: key Key of the item
      */
-    class func removeItem(key:String) {
+    public class func removeItem(key:String) {
         let usersDefaults = NSUserDefaults.standardUserDefaults()
         usersDefaults.removeObjectForKey(key)
     }
