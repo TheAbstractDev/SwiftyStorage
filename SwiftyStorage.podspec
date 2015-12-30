@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftyStorage"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Swift NSUserDefaults class imitate JavaScript localStorage"
 
   s.homepage 	 = 'https://github.com/TheAbstractDev/SwiftyStorage'
