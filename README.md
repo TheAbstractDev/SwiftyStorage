@@ -2,7 +2,14 @@
 Swift NSUserDefaults class imitate JavaScript localStorage
 
 # Installation
-#### CocoaPods - SOON
+#### CocoaPods
+Add a `Podfile` that contains at least the following information to the root of your app project, then do `pod install`.
+```ruby
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'SwiftyStorage', :git => 'https://github.com/TheAbstractDev/SwiftyStorage'
+```
 #### Manualy
 Simply open the .xcodeproj, build the project, reveal the framework: SwiftyStorage > SwiftyStorage > Products > SwiftyStorage.framework and drag it to your current xcode project. Make sure to check "Copy if needed".
 
